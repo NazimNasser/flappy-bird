@@ -1,10 +1,11 @@
 {
   "expo": {
-    "name": "flappyBird",
+    "name": "Flappy Bird",
     "slug": "flappyBird",
+    "description": "Flappy Bird is a game for waste time",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/flappyBirdIcon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
