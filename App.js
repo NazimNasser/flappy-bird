@@ -4,6 +4,10 @@ import { ImageBackground, Text, TouchableOpacity, View } from 'react-native';
 import { GameEngine } from 'react-native-game-engine';
 import entities from './entities';
 import Physics from './physics';
+import { I18nManager} from 'react-native';
+
+I18nManager.allowRTL(false);
+
 
 export default function App() {
   const [running, setRunning] = useState(false)
@@ -22,7 +26,7 @@ export default function App() {
       justifyContent: "center"
     }}>
       <View style={{ flex: 1 }}>
-        <Text style={{ textAlign: 'center', color: 'white', fontSize: 40, fontWeight: 'bold', margin: 20, }}>{currentPoints}</Text>
+        <Text style={{ textAlign: 'center', color: 'white', fontSize: 40, fontWeight: 'bold', margin: 30, }}>{currentPoints}</Text>
         <GameEngine
           ref={(ref) => { setGameEngine(ref) }}
           systems={[Physics]}
